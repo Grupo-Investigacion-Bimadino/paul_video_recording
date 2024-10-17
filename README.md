@@ -43,11 +43,23 @@ Gracias a todos los colaboradores y a la comunidad de desarrolladores que hacen 
 
 ## 📞 Contacto 
 Si tienes preguntas o sugerencias, no dudes en contactarnos a través de:
-- Alexander Toscano Ricardo ***🐙Github:*** (atoscanoricardo) ***📧Correo*:** [mailto:atoscano@correo.unicordoba.edu.co]
-- Briceño Ojeda Cesar Luis  ***🐙Github:*** (cesarbriceno)   ***📧Correo*:** [mailto:cbricenoojeda42@correo.unicordoba.edu.co]
-- Bruno Aguirre Mayerlis Paola  ***🐙Github:*** (Mayerlis-BrA)  ***📧Correo:*** [  mailto:@correo.unicordoba.edu.co]
-- Moreno Zapata Yerson David   ***🐙Github:***  (ElReyDavid2023) ***📧Correo:*** [  mailto:@correo.unicordoba.edu.co]
-- Álvarez Ortega José Fernando  ***🐙Github:*** (Josealvarez2001) ***📧Correo:*** [  mailto:@correo.unicordoba.edu.co]
-- Flórez Causil Arturo José   ***🐙Github:*** (ArturoFlorez1) ***📧Correo:*** [  mailto:@correo.unicordoba.edu.co]
+- Alexander Toscano Ricardo 
+    - ***🐙Github:*** (atoscanoricardo) 
+    - ***📧Correo*:** [mailto:atoscano@correo.unicordoba.edu.co]
+- Briceño Ojeda Cesar Luis  
+    - ***🐙Github:*** (cesarbriceno)   
+    - ***📧Correo*:** [mailto:cbricenoojeda42@correo.unicordoba.edu.co]
+- Bruno Aguirre Mayerlis Paola  
+    - ***🐙Github:*** (Mayerlis-BrA)  
+    - ***📧Correo:*** [  mailto:@correo.unicordoba.edu.co]
+- Moreno Zapata Yerson David   
+    - ***🐙Github:***  (ElReyDavid2023) 
+    - ***📧Correo:*** [  mailto:@correo.unicordoba.edu.co]
+- Álvarez Ortega José Fernando  
+    - ***🐙Github:*** (Josealvarez2001) 
+    - ***📧Correo:*** [  mailto:@correo.unicordoba.edu.co]
+- Flórez Causil Arturo José   
+    - ***🐙Github:*** (ArturoFlorez1) 
+    - ***📧Correo:*** [  mailto:@correo.unicordoba.edu.co]
 
 ### ¡Feliz codificación! 🚀
