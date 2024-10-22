@@ -1,0 +1,23 @@
+[
+    {
+      "id": 201,
+      "formato": "mp3",
+      "duracion": 180,
+      "timestampInicio": 1620303030,
+      "timestampPausa": 1620303200,
+      "timestampFinalizacion": 1620303330,
+      "palabrasClaves": ["audio", "grabacion", "clase"],
+      "grabacionId": 101
+    },
+    {
+      "id": 202,
+      "formato": "wav",
+      "duracion": 240,
+      "timestampInicio": 1620304030,
+      "timestampPausa": 1620304230,
+      "timestampFinalizacion": 1620304430,
+      "palabrasClaves": ["entrevista", "podcast", "audio"],
+      "grabacionId": 102
+    }
+  ]
+  
