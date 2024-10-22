@@ -27,7 +27,7 @@ Para configurar el proyecto en tu máquina local, sigue estos pasos:
 
 2. **Instala las dependencias**:
    ```bash
-   cd api-videoRecording
+   cd api-video-recording
    npm install
 
 3. **Ejecuta el proyecto**:
