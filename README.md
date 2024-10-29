@@ -1,65 +1,99 @@
-# 📹 API de Grabación de Videos
+<p align="center">
+  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="120" alt="Nest Logo" /></a>
+</p>
 
-Bienvenido a la **API de Grabación de Videos**. Este proyecto está diseñado para gestionar la grabación y almacenamiento de archivos de video y audio, permitiendo la administración eficiente de contenido multimedia.
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
-## 🚀 Características
+  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+    <p align="center">
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
+<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
+<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
+  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg" alt="Donate us"/></a>
+    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
+  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow" alt="Follow us on Twitter"></a>
+</p>
+  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
+  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-- **Gestión de Archivos**: Carga y almacenamiento de archivos de video y audio.
-- **Registro de Grabaciones**: Monitoreo de grabaciones con detalles sobre formato, duración y estado.
-- **Gestión de Pantallas**: Especificación de dimensiones y áreas de grabación.
+## Description
 
-## 📦 Estructura del Proyecto
+[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-La API está organizada en varias colecciones, cada una con su propósito específico:
+## Project setup
 
-- **Archivos**: Contiene información sobre los archivos de video y audio, incluyendo su tamaño y descripción.
-- **Audios**: Registra los metadatos de los archivos de audio, como formato y duración.
-- **Grabaciones**: Almacena detalles de las grabaciones, incluyendo fechas y palabras clave.
-- **Pantallas**: Define las dimensiones de las pantallas utilizadas para las grabaciones.
+```bash
+$ npm install
+```
 
-## 📂 Configuración del Proyecto
+## Compile and run the project
 
-Para configurar el proyecto en tu máquina local, sigue estos pasos:
+```bash
+# development
+$ npm run start
 
-1. **Clona el repositorio**:
-   ```bash
-   git clone https://github.com/Grupo-Investigacion-Bimadino/paul_video_recording
+# watch mode
+$ npm run start:dev
 
-2. **Instala las dependencias**:
-   ```bash
-   cd api-video-recording
-   npm install
+# production mode
+$ npm run start:prod
+```
 
-3. **Ejecuta el proyecto**:
-   ```bash
-    npm run start
+## Run tests
 
-## 🔧 Tecnologías Utilizadas
-- **NestJS**: Framework de Node.js para construir aplicaciones escalables y eficientes.
-- **MongoDB**: Base de datos NoSQL que permite la gestión flexible de datos.
+```bash
+# unit tests
+$ npm run test
 
-## 🙏 Agradecimientos
-Gracias a todos los colaboradores y a la comunidad de desarrolladores que hacen posible este proyecto. ¡Esperamos que encuentres esta API útil y fácil de usar! 😊
+# e2e tests
+$ npm run test:e2e
 
-## 📞 Contacto 
-Si tienes preguntas o sugerencias, no dudes en contactarnos a través de:
-- Alexander Toscano Ricardo 
-    - ***🐙Github:*** (atoscanoricardo) 
-    - ***📧Correo*:** [mailto:atoscano@correo.unicordoba.edu.co]
-- Briceño Ojeda Cesar Luis  
-    - ***🐙Github:*** (cesarbriceno)   
-    - ***📧Correo*:** [mailto:cbricenoojeda42@correo.unicordoba.edu.co]
-- Bruno Aguirre Mayerlis Paola  
-    - ***🐙Github:*** (Mayerlis-BrA)  
-    - ***📧Correo:*** [  mailto:@correo.unicordoba.edu.co]
-- Moreno Zapata Yerson David   
-    - ***🐙Github:***  (ElReyDavid2023) 
-    - ***📧Correo:*** [  mailto:@correo.unicordoba.edu.co]
-- Álvarez Ortega José Fernando  
-    - ***🐙Github:*** (Josealvarez2001) 
-    - ***📧Correo:*** [  mailto:@correo.unicordoba.edu.co]
-- Flórez Causil Arturo José   
-    - ***🐙Github:*** (ArturoFlorez1) 
-    - ***📧Correo:*** [  mailto:@correo.unicordoba.edu.co]
+# test coverage
+$ npm run test:cov
+```
 
-### ¡Feliz codificación! 🚀
+## Deployment
+
+When you're ready to deploy your NestJS application to production, there are some key steps you can take to ensure it runs as efficiently as possible. Check out the [deployment documentation](https://docs.nestjs.com/deployment) for more information.
+
+If you are looking for a cloud-based platform to deploy your NestJS application, check out [Mau](https://mau.nestjs.com), our official platform for deploying NestJS applications on AWS. Mau makes deployment straightforward and fast, requiring just a few simple steps:
+
+```bash
+$ npm install -g mau
+$ mau deploy
+```
+
+With Mau, you can deploy your application in just a few clicks, allowing you to focus on building features rather than managing infrastructure.
+
+## Resources
+
+Check out a few resources that may come in handy when working with NestJS:
+
+- Visit the [NestJS Documentation](https://docs.nestjs.com) to learn more about the framework.
+- For questions and support, please visit our [Discord channel](https://discord.gg/G7Qnnhy).
+- To dive deeper and get more hands-on experience, check out our official video [courses](https://courses.nestjs.com/).
+- Deploy your application to AWS with the help of [NestJS Mau](https://mau.nestjs.com) in just a few clicks.
+- Visualize your application graph and interact with the NestJS application in real-time using [NestJS Devtools](https://devtools.nestjs.com).
+- Need help with your project (part-time to full-time)? Check out our official [enterprise support](https://enterprise.nestjs.com).
+- To stay in the loop and get updates, follow us on [X](https://x.com/nestframework) and [LinkedIn](https://linkedin.com/company/nestjs).
+- Looking for a job, or have a job to offer? Check out our official [Jobs board](https://jobs.nestjs.com).
+
+## Support
+
+Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+
+## Stay in touch
+
+- Author - [Kamil Myśliwiec](https://twitter.com/kammysliwiec)
+- Website - [https://nestjs.com](https://nestjs.com/)
+- Twitter - [@nestframework](https://twitter.com/nestframework)
+
+## License
+
+Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
