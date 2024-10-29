@@ -1,1 +1,0 @@
-mongodb+srv://cbricenoojeda42:GMAPA0ZTviZLWqyg@cluster0.avxwc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
