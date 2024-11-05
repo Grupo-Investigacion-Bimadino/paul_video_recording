@@ -10,7 +10,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 @Module({
   imports: [
     MongooseModule.forRoot(
-      'mongodb+srv://cbricenoojeda42:GMAPA0ZTviZLWqyg@cluster0.avxwc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
+      'mongodb+srv://cbricenoojeda42:GMAPA0ZTviZLWqyg@cluster0.avxwc.mongodb.net/db_video_recording?retryWrites=true&w=majority&appName=Cluster0',
     ),
     ArchivosModule,
     AudiosModule,
