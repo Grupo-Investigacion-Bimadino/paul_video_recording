@@ -5,22 +5,51 @@ import { UpdatePantallaDto } from './dto/update-pantalla.dto';
 @Injectable()
 export class PantallasService {
   create(createPantallaDto: CreatePantallaDto) {
-    return 'This action adds a new pantalla';
+    return createPantallaDto;
   }
 
   findAll() {
-    return `This action returns all pantallas`;
+    return [
+      {
+        "id": 1,
+        "ancho": 1920,
+        "alto": 1080,
+        "iniX": 0,
+        "iniY": 0,
+        "finX": 1920,
+        "finY": 1080
+      },
+      {
+        "id": 2,
+        "ancho": 2560,
+        "alto": 1440,
+        "iniX": 0,
+        "iniY": 0,
+        "finX": 2560,
+        "finY": 1440
+      }
+    ];
   }
 
   findOne(id: number) {
-    return `This action returns a #${id} pantalla`;
+    return  {
+      "id": 2,
+      "ancho": 2560,
+      "alto": 1440,
+      "iniX": 0,
+      "iniY": 0,
+      "finX": 2560,
+      "finY": 1440
+    };
   }
 
   update(id: number, updatePantallaDto: UpdatePantallaDto) {
-    return `This action updates a #${id} pantalla`;
+    return {id: id,
+      ...updatePantallaDto,
+    };
   }
 
   remove(id: number) {
-    return `This action removes a #${id} pantalla`;
+    return {id,};
   }
 }
