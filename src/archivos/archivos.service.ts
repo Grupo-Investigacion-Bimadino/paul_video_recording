@@ -1,11 +1,18 @@
 import { Injectable } from '@nestjs/common';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
 import { CreateArchivoDto } from './dto/create-archivo.dto';
 import { UpdateArchivoDto } from './dto/update-archivo.dto';
+import { Archivo } from './schemas/archivos.schemas';
 
 @Injectable()
 export class ArchivosService {
+  constructor(
+      @InjectModel(Archivo.name)  private archivoModel: Model<Archivo>, // Inyectar el modelo de Mongoose
+    ) {}
   create(createArchivoDto: CreateArchivoDto) {
-    return createArchivoDto;
+    const createdArchivo =  new this.archivoModel(createArchivoDto)
+    return createdArchivo.save();
   }
 
   findAll() {
