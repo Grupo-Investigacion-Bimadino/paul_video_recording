@@ -19,16 +19,16 @@ export class ArchivosController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.archivosService.findOne(+id);
+    return this.archivosService.findOne(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateArchivoDto: UpdateArchivoDto) {
-    return this.archivosService.update(+id, updateArchivoDto);
+    return this.archivosService.update(id, updateArchivoDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.archivosService.remove(+id);
+    return this.archivosService.remove(id);
   }
 }

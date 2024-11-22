@@ -19,16 +19,16 @@ export class PantallasController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.pantallasService.findOne(+id);
+    return this.pantallasService.findOne(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updatePantallaDto: UpdatePantallaDto) {
-    return this.pantallasService.update(+id, updatePantallaDto);
+    return this.pantallasService.update(id, updatePantallaDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.pantallasService.remove(+id);
+    return this.pantallasService.remove(id);
   }
 }

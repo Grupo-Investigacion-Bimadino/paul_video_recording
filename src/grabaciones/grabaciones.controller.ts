@@ -19,16 +19,16 @@ export class GrabacionesController {
 
   @Get(':id')
   findOne(@Param('id') id: string) {
-    return this.grabacionesService.findOne(+id);
+    return this.grabacionesService.findOne(id);
   }
 
   @Patch(':id')
   update(@Param('id') id: string, @Body() updateGrabacioneDto: UpdateGrabacioneDto) {
-    return this.grabacionesService.update(+id, updateGrabacioneDto);
+    return this.grabacionesService.update(id, updateGrabacioneDto);
   }
 
   @Delete(':id')
   remove(@Param('id') id: string) {
-    return this.grabacionesService.remove(+id);
+    return this.grabacionesService.remove(id);
   }
 }
