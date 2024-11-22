@@ -10,7 +10,8 @@ export class ArchivosService {
   constructor(
       @InjectModel(Archivo.name)  private archivoModel: Model<Archivo>, // Inyectar el modelo de Mongoose
     ) {}
-  create(createArchivoDto: CreateArchivoDto) {
+  
+    create(createArchivoDto: CreateArchivoDto) {
     const createdArchivo =  new this.archivoModel(createArchivoDto)
     return createdArchivo.save();
   }
