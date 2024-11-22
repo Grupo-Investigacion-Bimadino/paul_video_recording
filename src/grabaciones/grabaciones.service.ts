@@ -1,12 +1,21 @@
 import { Injectable } from '@nestjs/common';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
 import { CreateGrabacioneDto } from './dto/create-grabacione.dto';
 import { UpdateGrabacioneDto } from './dto/update-grabacione.dto';
+import { Grabacion } from './schemas/grabaciones.schema';
 
 @Injectable()
 export class GrabacionesService {
+  constructor(
+    @InjectModel(Grabacion.name) private grabacionModel: Model<Grabacion>, // Inyectar el modelo de Mongoose
+  ) {}
+
   create(createGrabacioneDto: CreateGrabacioneDto) {
-    return createGrabacioneDto;
+    const createdGrabacion = new this.grabacionModel(createGrabacioneDto);
+    return createdGrabacion.save();
   }
+
 
   findAll() {
     return [

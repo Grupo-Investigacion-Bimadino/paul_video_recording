@@ -1,11 +1,19 @@
 import { Injectable } from '@nestjs/common';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
 import { CreatePantallaDto } from './dto/create-pantalla.dto';
 import { UpdatePantallaDto } from './dto/update-pantalla.dto';
+import { Pantalla } from './schemas/pantallas.schema';
 
 @Injectable()
 export class PantallasService {
+  constructor(
+    @InjectModel(Pantalla.name) private pantallaModel: Model<Pantalla>, // Inyectar el modelo de Mongoose
+  ) {}
+
   create(createPantallaDto: CreatePantallaDto) {
-    return createPantallaDto;
+    const createdPantalla = new this.pantallaModel(createPantallaDto);
+    return createdPantalla.save();
   }
 
   findAll() {

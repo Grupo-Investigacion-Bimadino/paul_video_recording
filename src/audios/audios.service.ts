@@ -1,11 +1,17 @@
 import { Injectable } from '@nestjs/common';
+import { InjectModel } from '@nestjs/mongoose';
+import { Model } from 'mongoose';
 import { CreateAudioDto } from './dto/create-audio.dto';
 import { UpdateAudioDto } from './dto/update-audio.dto';
+import { Audio } from './schemas/audios.schema';
 
 @Injectable()
 export class AudiosService {
+  constructor(
+    @InjectModel(Audio.name) private audioModel: Model<Audio>) {}
   create(createAudioDto: CreateAudioDto) {
-    return createAudioDto;
+    const createdAudio = new this.audioModel(createAudioDto);
+    return createdAudio.save();
   }
 
   findAll() {
